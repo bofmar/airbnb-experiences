@@ -3,9 +3,10 @@ import star from '../images/star.png';
 
 export default function Card(props) {
   const { picName, rating, reviews, location, description, price, openSpots } = props.experience;
+  const badgeText = openSpots === 0 ? 'SOLD OUT' : location === 'Online' ? 'ONLINE' : null;
   return (
     <div className='card'>
-      {openSpots === 0 ? <div className='card-badge'>SOLD OUT</div> : null}
+      {badgeText ? <div className='card-badge'>{badgeText}</div> : null}
       <img src={require(`../images/${picName}.png`)} className='card-image' />
       <div className='card-stats'>
         <img src={star} className='card-star' />
