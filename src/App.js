@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Card from './components/Card';
+import CardsList from './components/CardsList';
+import experiences from './data/Experiences';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Card />
+      <CardsList experiences={experiences} />
     </div>
   );
 }
