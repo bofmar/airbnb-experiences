@@ -8,5 +8,5 @@ export default function Navbar() {
         <img src={logo} alt='Airbnb logo' />
       </nav>
     </header>
-  )
+  );
 }

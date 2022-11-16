@@ -3,6 +3,8 @@
 .App {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -19,4 +21,28 @@ nav {
 nav > img {
   height: 35%;
   margin-left: 2%;
+}
+
+.hero-section {
+  height: 50%;
+  align-self: center;
+  margin: 30px;
+}
+
+.hero-section > img {
+  height: 80%;
+}
+
+.hero-section > h1 {
+  margin-top: 20px;
+  font-size: 36px;
+  line-height: 1.1em;
+  padding-top: 15px;
+}
+
+.hero-section > p {
+  color: #222222;
+  padding-top: 15px;
+  line-height: 1.1rem;
+  width: 320px;
 }
