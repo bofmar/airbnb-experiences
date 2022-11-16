@@ -1,11 +1,11 @@
 import React from "react"
 import star from '../images/star.png';
 
-//export default function Card(props) {
 export default function Card(props) {
-  const { picName, rating, reviews, location, description, price } = props.experience;
+  const { picName, rating, reviews, location, description, price, openSpots } = props.experience;
   return (
     <div className='card'>
+      {openSpots === 0 ? <div className='card-badge'>SOLD OUT</div> : null}
       <img src={require(`../images/${picName}.png`)} className='card-image' />
       <div className='card-stats'>
         <img src={star} className='card-star' />
