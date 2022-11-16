@@ -46,3 +46,9 @@ nav > img {
   line-height: 1.1rem;
   width: 320px;
 }
+
+@media(max-width: 650px) {
+  .hero-section > img {
+    aspect-ratio: 1/1;
+  }
+}
