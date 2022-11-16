@@ -1,8 +1,7 @@
 import React from "react"
 import star from '../images/star.png';
 
-export default function Card(props) {
-  const { picName, rating, reviews, location, description, price, openSpots } = props.experience;
+export default function Card({ picName, rating, reviews, location, description, price, openSpots }) {
   const badgeText = openSpots === 0 ? 'SOLD OUT' : location === 'Online' ? 'ONLINE' : null;
   return (
     <div className='card'>
