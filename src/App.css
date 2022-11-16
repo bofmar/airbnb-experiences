@@ -2,7 +2,6 @@
 
 .App {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +15,7 @@
 }
 
 header {
-  height: 8%;
+  height: 8vh;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 10%);
 }
 
@@ -32,7 +31,7 @@ nav > img {
 }
 
 .hero-section {
-  height: 70%;
+  height: 70vh;
   align-self: center;
   margin: 30px;
 }
@@ -60,13 +59,18 @@ nav > img {
 
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   gap: 70px;
+
   padding-bottom: 20px;
+  overflow: scroll;
 }
 
 .card {
   width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;
 }
 
 .card-image {
@@ -86,5 +90,8 @@ nav > img {
 @media(max-width: 650px) {
   .hero-section > img {
     aspect-ratio: 1/1;
+  }
+  .cards {
+    justify-content: flex-start;
   }
 }
